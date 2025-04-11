@@ -45,10 +45,10 @@ const App: React.FC = () => {
   const testMapPerformance = useCallback((array: string[]): TestResult => {
     const start = performance.now();
     
-    const result = array.map((item, index) => {
-      // 単純なJSXを生成（実際のレンダリングはしない）
-      return <li key={index}>{item}</li>;
-    });
+    // const result = array.map((item, index) => {
+    //   // 単純なJSXを生成（実際のレンダリングはしない）
+    //   return <li key={index}>{item}</li>;
+    // });
     
     const end = performance.now();
     return {
